@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Quicksand", sans-serif;
+}
+body{
+    background-color: #0c0c0c;
+}
+ul li a{
+ text-decoration: none;
+ color: #000;
+ position: absolute;
+ top: 50%;
+ height: 50%;
+ transform: translate(-50%, -50%);
+}
+ul{
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    text-align: center; 
+}
+ul li{
+    list-style: nona;
+    display:inline-block;
+    background-color: #919692;
+    font-size: 30px;
+    width: 100px;
+    height: 100px;
+    margin-top: 100px;
+    border-radius: 50%;
+    margin-left: 50px;
+    animation:  animate 1s linear infinite;
+     animation-delay: calc(var(--i) * 0.2s); 
+}
+@keyframes animate {
+    0%{
+        transform: translateY(0)  scaleX(1);
+        box-shadow: 0 0 0 #fe2f33;
+    }
+    50%{
+        transform: translateY(-70px) scaleX(1);
+        box-shadow: 0 30px 15px #13e41a;
+    }
+    100%{
+        transform: translateY(0) scaleX(1);
+        box-shadow: 0 0 0 #202bf4;
+    }
+}
